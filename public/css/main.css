@@ -1,0 +1,48 @@
+body {
+  height: 500px;
+  background-image: url('../img/fondo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+#divParraf {
+  padding: 10px;
+  width:400px;
+  margin:150px auto;
+}
+
+#parrafContact {
+  background-image:url('../img/cmd.jpg');
+  height: 250px;
+  opacity: 0.95;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:665px;
+  margin: 10px auto;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h4{
+  padding: 40px;
+  width:600px;
+  margin: 20px;
+}
+  
+#formulario{
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+textarea {
+  overflow: scroll;
+  height: 80px;
+  width: 100%;
+  resize: none;
+}
+

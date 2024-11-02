@@ -1,0 +1,35 @@
+<%- include("template/loggins") %>
+
+<br><br><br><br><br><br>
+<div class="cointainer w-25 m-auto">
+    
+    <form action="/" method="post" class="text-bg-dark p-2">
+
+        <div class="card-body text-center">
+            <h5 class="card-title" style="color:rgb(255, 255, 255)">Loggin</h5>
+        </div>    
+        <input 
+            type="text"
+            placeholder="Usuario"
+            class="form-control my-2"
+            name="usuario"
+            required
+        >
+        <input 
+            type="password"
+            placeholder="Password"
+            class="form-control my-2"
+            name="password"
+            required
+        >
+        <button class="btn btn-success btn-block w-100" type="submit" href="/home">
+            Enviar
+            
+        </button>
+        
+        <div class="card-body text-center">
+            <a class="card-title" style="color:rgb(255, 255, 255)" href="/registro">Registrarse</a>
+        </div>    
+    </form>
+
+</div>

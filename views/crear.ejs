@@ -1,0 +1,29 @@
+<%- include("template/headers") %>
+
+<div class="cointainer w-50 m-auto">
+    
+    <form class="form-control bg-dark m-auto w-50 my-5">      
+        <h2 class="text-center"><b> <u style="color: rgb(255, 209, 41);">Crear Mascota</u> </b></h2>  
+    </form>
+
+    <form action="/mascotas" method="post" class="form-control bg-dark w-50 m-auto">
+        <input 
+            type="text"
+            placeholder="Agregar nombre"
+            class="form-control my-2"
+            name="nombre"
+        >
+        <input 
+            type="text"
+            placeholder="Agregar descripcion"
+            class="form-control my-2"
+            name="descripcion"
+        >
+        <button class="btn btn-success btn-block w-100 my-3" type="submit">
+            Agregar
+        </button>
+    </form>
+
+</div>
+    
+    

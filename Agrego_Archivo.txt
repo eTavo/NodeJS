@@ -1,0 +1,9 @@
+11/10/23
+Se genero el registro de usuario con su validacion para los campos,
+ se redirige al loggin pero el loggin no valida y redirige mal
+https://www.youtube.com/watch?v=SDnyMwxuv6E min 57
+
+-----------------------------------------------------------------------------------
+
+12/10/23
+Se realizo la validacion del loggin redirigiendo correctamente el inicio de la app

@@ -1,0 +1,58 @@
+<%- include("template/headers") %>
+
+<figure class="text-center m-2">   
+    <div id="parrafContact">
+        <p>
+            <h4 style="color: rgb(218, 218, 218)">En esta seccion usted tendra la posibilidad de dejar sus datos para luego ponernos en contacto
+                y asi poder tener una reunion. La respuesta a su solicitud se realizara en breve, desde ya 
+                agradezco mucho su interes.</h4>
+        </p>
+    </div> 
+</figure>
+
+<hr class="m-0" style="color:rgb(0, 0, 0)"><br>
+
+<div class="cointainer w-25 m-auto">
+    
+    <form action="/contact" method="post" class="text-bg-dark p-2">
+        <input 
+            type="text"
+            placeholder="Nombre"
+            class="form-control my-2"
+            name="nombre"
+            required
+        >
+        <input 
+            type="text"
+            placeholder="Contacto"
+            class="form-control my-2"
+            name="contacto"
+            required
+        >
+        <input 
+            type="text"
+            placeholder="Motivo"
+            class="form-control my-2"
+            name="motivo"
+            required
+        >
+        <input 
+            type="text"
+            placeholder="Entidad"
+            class="form-control my-2"
+            name="entidad"
+            required
+        >
+        <input 
+            type="text"
+            placeholder="Descripcion"
+            class="form-control my-2"
+            name="descripcion"
+            required
+        >
+        <button class="btn btn-success btn-block w-100" type="submit">
+            Enviar
+        </button>
+    </form>
+
+</div>

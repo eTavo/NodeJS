@@ -1,0 +1,88 @@
+<%- include("template/headers") %>
+
+<div class="jumbotron">
+    <h1 class="display-3 text-center p-3" style="color: rgb(0, 0, 0);"><b>Calculadora para Freelance</b></h1>
+    <hr class="m-0" style="color:rgb(0, 0, 0)"><br>
+    <p class="lead col-8 mx-auto text-center " style="color: rgb(0, 0, 0);"><b>Si es un/a trabajador/a freelance, sabiendo que muchas veces
+            las ofertas
+            laborales se expresan en valor hora, le traigo aqui la solución a saber cuanto va a cobrar por semana, mes y
+            año,
+            lo unico que necesitamos para empezar es saber el valor de la hora.</b></p><br>
+</div>
+
+<div class="container-sm w-25 bg-dark m-auto">
+
+    <form class="row w-75 m-auto">
+        
+
+        <span class="input-group-text w-25 my-2" >u$d</span>
+        <input 
+            type="number"
+            placeholder="0.00"
+            class="form-control w-75 my-2"
+            id="valor"
+            required
+        > 
+        <span class="input-group-text w-25 my-2">Hs</span>
+        <input 
+            type="number"
+            placeholder="0"
+            class="form-control w-25 my-2"
+            id="horas"
+            required 
+        >
+        <span class="input-group-text w-25 my-2">Dias</span>
+        <input 
+            type="number"
+            placeholder="0"
+            class="form-control w-25 my-2"
+            id="dias"
+            required
+        >       
+
+        <hr class="m-0" style="color:rgb(255, 255, 255)">   
+        <input class="btn btn-danger btn-block w-50 m-auto my-2" type="Reset" value="Borrar">   
+        <input class="btn btn-success btn-block w-50 my-2" type="button" onclick="calcular()" value="Calcular">     
+        <hr class="m-0" style="color:rgb(255, 255, 255)">
+
+        <span class="input-group-text w-50 my-2">Semana</span>
+        <output name="semana" type="number" class="form-control w-50 my-2" id="semana" ></output>
+    
+        <span class="input-group-text w-50 my-2">Mes</span>
+        <output name="semana" type="number" class="form-control w-50 my-2" id="mes" ></output>
+    
+        <span class="input-group-text w-50 my-2">Año</span>
+        <output name="semana" type="number" class="form-control w-50 my-2" id="anio" ></output>
+    </form>
+</div>
+
+
+<script>
+    function calcular() {
+
+        var valor = 0;
+        var horas = 0;
+        var dias = 0;
+
+        valor = document.getElementById("valor").value;
+        horas = document.getElementById("horas").value;
+        dias = document.getElementById("dias").value;
+
+        var semana = 0;
+        var mes = 0;
+        var anio = 0;
+
+        semana = valor * horas * dias;
+        mes = semana * 4;
+        anio = mes * 12;
+
+        document.getElementById("semana").value = semana;
+        document.getElementById("mes").value = mes;
+        document.getElementById("anio").value = anio;
+    }
+
+</script>
+
+<!--   EJEMPLO -->
+
+
